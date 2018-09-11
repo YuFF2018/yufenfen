@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.openPage {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #557BF0;
+    padding: 0 0.5rem 0.5rem;
+    box-sizing: border-box;
+}
+.borderBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-top: none; 
+}
+.borderBox::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 20px;
+    background: #557BF0;
+}
+.headPic {
+    position: absolute;
+    width: 5rem;
+    top: -3.8rem;
+    left: 2rem;
+}
+.mainPic {
+    margin-top: 3rem;
+    width: 7.2rem;
+}
+.bottomPic {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0.8rem;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: #557BF0;
+    color: #fff;
+    font-size: 0.4rem;
+}
+.nameBox{
+    display: flex;
+    justify-content: center;
+}
+.copName {
+    display: inline-block;
+    padding: 0.15rem 0;
+    margin: 0.8rem 0;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+.introBox {
+    font-size: 0.28rem;
+    font-weight: lighter;
+    line-height: 0.56rem;
+    margin: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.part {
+    display: flex;
+    margin: 0.25rem 0;
+}
+.partPic {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.2rem;
+}
+.dashedBorder {
+    flex: 1;
+    border-bottom: 1px dashed #fff;
+    height: 0.2rem;
+}
+
+.founder {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('./images/5.svg') no-repeat;
+    background-position: -5.5vw 43vh;
+    background-size: 7.4rem;
+}
+.founderTitle {
+    color: #557BF0;
+    font-size: 0.42rem;
+    text-align: center;
+    padding: 0.35rem;
+}
+.founderItem {
+    border: 2px solid #557BF0;
+    width: calc(100% - 1.2rem);
+    /* height: 10rem; */
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.photo {
+    width: 100%;
+    margin: 0.3rem 0 0.3rem;
+    display: flex;
+    justify-content: center;
+}
+.founderName {
+    text-align: center;
+    font-size: 0.4rem;
+    color: #557BF0;
+}
+.en {
+    color: darkgray;
+    padding-bottom: 0.3rem;
+    box-sizing: border-box;
+}
+.founderDetail {
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+.swiper-slide{
+    font-size: 12px;
+}
+
+.coreCompeti {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.competiTitle {
+    color: #557BF0;
+    font-size: 0.42rem;
+    padding: 0.8rem 1.4rem 0.5rem;
+}
+.core {
+    border-bottom: 2px solid #557BF0;
+}
+.top {
+    display: flex;
+    color: #557BF0;
+    padding-left: 0.35rem;
+}
+.topPic {
+    width: 0.6rem;
+    height: 0.6rem;
+    padding-right: 0.35rem;
+}
+.topTitle {
+    font-size: 0.34rem;
+}
+.competiDetail {
+    font-size: 0.28rem;
+    padding: 0.2rem 1rem 0.2rem 1.4rem;
+    line-height: 0.5rem;
+}
+
+.jobMenu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 0.3rem;
+    color: #557BF0;
+    line-height: 0.8rem;
+    padding: 0.6rem 0.8rem;
+}
+.jobList {
+    border: 1px solid #557BF0;
+    padding-left: 0.6rem;
+}
+.jobList li{
+    list-style-type: none;
+}
+.subTitle_1 {
+    font-size: 0.2rem;
+    line-height: 0.25rem;
+    padding-bottom: 0.2rem;
+}
+
+.btmBorder {
+    border-bottom: 1px solid #557BF0;
+    box-sizing: border-box;
+}
+
+.jobContent {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    /* overflow: hidden; */
+}
+.jobTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.4rem;
+    color: #557BF0;
+    padding: 0.6rem 0.3rem 0.2rem;
+}
+.jobLeft {
+    display: flex;
+    align-items: center;
+}
+.jobPic {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.jobName {
+    padding-left: 0.2rem;
+}
+.subTitle {
+    font-size: 0.25rem;
+    line-height: 0.3rem;
+    text-align: center;
+}
+.deleteKey {
+    width: 0.4rem;
+    height: 0.4rem;
+    padding-right: 0.3rem;
+}
+.jobContent p {
+    font-size: 0.28rem;
+    line-height: 0.56rem;
+    color: #000;
+}
+.description {
+    font-size: 0.32rem;
+    color: #557BF0;
+    padding-bottom: 0.2rem;
+}
+.positionDetail {
+    padding: 0rem 0.6rem 0.3rem;
+}
+.positionDemand {
+    padding: 0.2rem 0.6rem 0.3rem;
+}
+.line {
+    border-top: 1px solid #557BF0;
+    padding-bottom: 0.4rem;
+}

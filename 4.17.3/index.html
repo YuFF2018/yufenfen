@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>习题4.17.3 实现列表</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h4>4.17.3 实现列表</h4> 
+    <div>示例：
+        var list = {
+            value: 1,
+            rest: {
+                value: 2,
+                rest: {
+                    value: 3,
+                    rest: null
+                }
+            }
+        };
+    </div>
+    <div>1、编写函数arrayToList，当给定参数[1,2,3]时，建立一个和示例相似的数据结构。</div>
+    <div>2、编写函数listToArray，将列表转换成数组。</div>
+    <div>3、编写工具函数prepend,接受一个元素和一个列表，然后创建一个新的列表，将元素添加到输入列表的开头。</div>
+    <div>4、编写一个函数nth，接受一个列表和一个数，并返回列表中指定位置的元素，如果该元素不存在则返回undefined。（加大难度：写递归版本的nth函数）</div>
+</body>
+</html>
